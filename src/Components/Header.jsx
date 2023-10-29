@@ -4,7 +4,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 
-const HeaderComponents = () => {
+
+const HeaderComponents = (data, mediaType) => {
     const navData = [
         { name: 'Home', Link: '/' },
         { name: 'Movies', Link: '/movies' },
@@ -38,3 +39,4 @@ const HeaderComponents = () => {
 }
 
 export default HeaderComponents;
+
