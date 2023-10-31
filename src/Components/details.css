@@ -153,7 +153,7 @@ ul, ul li{
   top: 0;
   bottom: 0;
   width: 16px;
-  background: url("../Assets/Images/Screenshot\ 2023-10-29\ 191326.png") no-repeat center;
+  background: url("../Assets/Images/star.svg") no-repeat center;
   background-size: 100% auto;
 }
 .card__list {
@@ -416,8 +416,6 @@ ul, ul li{
   }
 }
 
-
-
 .frameSec{
   margin:0;
 }
@@ -464,7 +462,7 @@ ul, ul li{
   right: 0;
   bottom: 0;
   border-radius: 50%;
-  background: url("../Assets/Images/Screenshot\ 2023-10-29\ 191342.png") no-repeat center;
+  background: url("../Assets/Images/play\ \(1\).svg") no-repeat center;
   background-size: 26px auto;
 }
 .youtubeImage .iconYoutube:hover{

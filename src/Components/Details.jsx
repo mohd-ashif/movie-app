@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import './details.css';
 import axios from 'axios';
 import {img_300, img_not_available} from '../config';
+import DarkVariantExample from '../Parts/Carousel';
 
 const DetailsContainer = ()=>{
     const params = useParams();
@@ -60,7 +61,7 @@ const DetailsContainer = ()=>{
     const renderDataHtml = ()=>{
         const ImageURL = content.poster_path ? img_300 + content.poster_path : img_not_available;
         const tagline = content.tagline || '';
-        const vote_average = parseInt(content.vote_average);
+        const vote_average = parseFloat(content.vote_average).toFixed(1)
         const original_language = content.original_language || '';
         const adult = !content.adult ? '10+' : '18+';
         const origin_country = content.origin_country && content.origin_country[0] ? content.origin_country[0] : content.production_countries && content.production_countries[0] && content.production_countries[0].name ? content.production_countries[0].name : '';
@@ -132,8 +133,19 @@ const DetailsContainer = ()=>{
                 {
                     titleName && titleName !==  '' ? renderDataHtml() : 'Loading...'
                 }
-                
             </Container>
+            <section className='section'> 
+            <div className="contendHead">
+                <Container>
+                    <Row>
+                        <Col className='col-12'>
+                        {credits && credits.length > 0 ? <DarkVariantExample data={credits} /> : "loading..."}
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            </section >
     </main>
     </>
   )
