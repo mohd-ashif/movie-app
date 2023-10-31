@@ -7,10 +7,11 @@ import { Link } from 'react-router-dom';
 
 const HeaderComponents = (data, mediaType) => {
     const navData = [
-        { name: 'Home', Link: '/' },
+      { name: 'Home', Link: '/' },
         { name: 'Movies', Link: '/movies' },
         { name: 'Tv Series', Link: '/series' },
         { name: 'Search', Link: '/search' },
+       
     ];
 
     return (

@@ -8,6 +8,7 @@ import TvSeriesContainer from './Components/TvSeries';
 import SearchContainer from './Components/Search';
 import FooterComponents from './Components/Footer';
 import HeaderComponents from './Components/Header';
+import DetailsContainer from './Components/Details';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/movies' element={<MoviesContainer />} /> 
         <Route path='/series' element={<TvSeriesContainer/>} />
         <Route path='/search' element={<SearchContainer/>} /> 
+        <Route path='/details/:movieid/:mediatype' element={<DetailsContainer/>} /> 
         
 
       </Routes>

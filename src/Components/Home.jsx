@@ -3,9 +3,8 @@ import "../App.css"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+
 import CardMoviesComponents from './CardMovie';
-
-
 import axios from 'axios';
 
 const  HomeContainer = ()=>{
@@ -24,9 +23,10 @@ const  HomeContainer = ()=>{
 
   useEffect(()=>{
       
-      GetDataTrending();
-      //eslint-disable-next-line
-  }, [])
+    console.log('Trending Component didupdate mount');
+    GetDataTrending();
+
+  }, [pageno])
   
   
 
@@ -43,9 +43,9 @@ const  HomeContainer = ()=>{
          </section>
          </Col>
          {
-                        content && content.length > 0 ? content.map((item)=>{
-                            return (<CardMoviesComponents key={item.id} data={item} />)
-                        }) : 'Loading ....'
+                        content && content.length > 0 ? content.map((item,index)=>{
+                            return (<CardMoviesComponents key={index} data={item} />)
+                        }) : null
                     }
 
                 
