@@ -228,6 +228,7 @@ ul, ul li{
   width: 100%;
   font-family: 'Open Sans', sans-serif;
 }
+
 .card--details .card__meta li:last-child {
   margin-bottom: 0;
 }

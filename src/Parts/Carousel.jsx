@@ -49,11 +49,11 @@ function DarkVariantExample({ data }) {
 
   return (
     <div className="myCarWrap">
-      <h2>Co-Star Information</h2> 
+      <h2>Top Cast</h2> 
       <AliceCarousel
         responsive={responsive}
         autoPlay
-        autoPlayInterval={1900}
+        autoPlayInterval={1800}
         infinite={true}
         disableButtonsControls
         disableDotsControls

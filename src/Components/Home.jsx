@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 
 import CardMoviesComponents from './CardMovie';
 import axios from 'axios';
+import PaginationComponent from "../Parts/Pagination"
 
 const  HomeContainer = ()=>{
   const [content, setContent] = useState([]);
@@ -18,8 +19,12 @@ const  HomeContainer = ()=>{
     const {data} = await axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=${API_KEY}&page=${pageno}`)
     setContent(data.results);
     setPaginationno(data.total_pages);
-    console.log('data', data)
+    // console.log('data', data)
 }
+
+useEffect(() => {
+  GetDataTrending();
+}, [GetDataTrending]);
 
   useEffect(()=>{
       
@@ -27,9 +32,11 @@ const  HomeContainer = ()=>{
     GetDataTrending();
 
   }, [pageno])
-  
-  
 
+  const handleClick = (number) => {
+    setPageno(number);
+
+  }
   
   return (
     <main className='homePage'> 
@@ -47,8 +54,16 @@ const  HomeContainer = ()=>{
                             return (<CardMoviesComponents key={index} data={item} />)
                         }) : null
                     }
+                   {
+  paginationno && paginationno > 1 ? (
+    <PaginationComponent
+      maxnum={paginationno}
+      activenum={pageno}
+      handleClick={handleClick}
+    />
+  ) : null
+}
 
-                
         </Row>
       </Container>
     </div>
