@@ -63,7 +63,6 @@ useEffect(() => {
     />
   ) : null
 }
-
         </Row>
       </Container>
     </div>

@@ -19,7 +19,7 @@ const CardMoviesComponent = ({ data, mediaType }) => {
         <div className='col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6'>
             <Link to={`/details/${id}/${media_type}`} className='video-thumb'>
                 <figure className="video-image">
-                    
+
                     <span>
                         <img src={ImageURL} alt={title} />
                     </span>
