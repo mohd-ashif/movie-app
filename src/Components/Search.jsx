@@ -33,7 +33,7 @@ const  SearchContainer = ()=>{
     }, [])
 
     const fetchDataQuery = ()=>{
-        // 
+       
         GetDataTrending()
     }
     

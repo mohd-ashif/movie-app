@@ -1,9 +1,11 @@
 .searchBox{
     margin-bottom: 40px;
+    font-family:' Martel Sans';
 }
 .searchBox .container h6 {
    font-size: 22px;
     font-weight: 600;
+    font-family: 'Martel Sans';
     margin-bottom: 10px;
     text-align: center;
     color: #fff;
@@ -48,6 +50,7 @@
 .searchBox input[type="submit"] {
     height: 70px;
     display: inline-block;
+    font-family: 'Martel Sans';
     font-size: 14px;
     font-weight: 600;
     color: #fff;

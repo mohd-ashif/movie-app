@@ -36,7 +36,7 @@ const  MoviesContainer = ()=>{
 
     useEffect(()=>{
         GetDataTrending();
-        //eslint-disable-next-line
+       
     }, [pageno, genreforURL])
 
     const handleClick = (number)=>{

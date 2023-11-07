@@ -32,7 +32,8 @@ const CardMoviesComponent = ({ data, mediaType }) => {
                             {vote_average}
                         </b>
                     </div>
-                    <div className='hd'>{mediaType}
+                    <div className='hd'>
+                        {media_type}
                         <b>{original_language}</b>
                     </div>
 
