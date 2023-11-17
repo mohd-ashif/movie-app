@@ -71,7 +71,7 @@ const DetailsContainer = () => {
         const genres = content.genres && content.genres.length > 0 ? content.genres.map((item) => <span key={item.id}>{item.name}</span>) : '';
         return (
             <Row>
-                <Col className='col-12'>
+                <Col className='col-12'  >
                     <h1>
                         {titleName}
                         {
@@ -79,9 +79,10 @@ const DetailsContainer = () => {
                         }
                     </h1>
                 </Col>
-                <Col className='col-12 col-xl-6 me-auto my-2 my-lg-0'>
-                    <div className='card card--details'>
-                        <div className='card__cover'>
+                <Col className='col-12 col-xl-6 me-auto my-2 my-lg-0' >
+                    <div className='card card--details' >
+                        <div className='card__cover' >
+
                             <img src={ImageURL} alt="myimage" />
                         </div>
                         <div className='card__content'>

@@ -28,6 +28,10 @@ ul, ul li{
   width: 100%;
   position: relative;
   z-index: 1;
+  /* Set an appropriate height */
+  background-size: cover; /* Adjust as needed */
+  background-position: center;
+  
 }
 .card__cover:before {
   content: '';

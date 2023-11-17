@@ -19,7 +19,7 @@ body {
   
 }
 #navbarScroll{
-  position: fixed;
+  position: absolute;
     right: 40px;
   
     margin-top: 15px;
