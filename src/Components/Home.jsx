@@ -12,7 +12,8 @@ const  HomeContainer = ()=>{
   const [content, setContent] = useState([]);
   const [pageno, setPageno] = useState(1)
   const [paginationno, setPaginationno] = useState(0)
-  const API_KEY = 'c82efe36f886f9f4ee17e977df32ddfe'
+  const API_KEY = `${process.env.REACT_APP_API_KEY}`
+
 
 
   const GetDataTrending = async ()=>{
