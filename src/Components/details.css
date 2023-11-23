@@ -31,6 +31,7 @@ ul, ul li{
   /* Set an appropriate height */
   background-size: cover; /* Adjust as needed */
   background-position: center;
+
   
 }
 .card__cover:before {
@@ -424,6 +425,7 @@ ul, ul li{
 }
 
 .frameSec{
+  padding: 1px;
   margin:0;
 }
 .frameSec .youtubeImage {
@@ -456,6 +458,50 @@ ul, ul li{
   padding: 0;
   position: absolute;
 }
+.frameSec {
+  
+  margin: 0;
+}
+iframe{
+  width: 560px;
+  height: 300px;
+  margin-left: 50px;
+  border-radius: 3px;
+}
+
+.frameSec .youtubeImage {
+  margin: 0;
+  position: relative;
+  display: block;
+}
+
+.frameSec .youtubeImage .imageSec {
+  display: block;
+}
+
+.frameSec .youtubeImage .imageSec img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.frameSec .youtubeImage .iconYoutube {
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+  border-radius: 50%;
+  margin-top: -30px;
+  margin-left: -30px;
+  top: 50%;
+  left: 50%;
+  transition: 0.4s ease;
+  transition-property: opacity, background-color, color, border-color, transform, box-shadow;
+  padding: 0;
+  position: absolute;
+}
 
 .frameSec .youtubeImage .iconYoutube:before {
   content: '';
@@ -472,7 +518,37 @@ ul, ul li{
   background: url("../Assets/Images/play\ \(1\).svg") no-repeat center;
   background-size: 26px auto;
 }
-.youtubeImage .iconYoutube:hover{
+
+.youtubeImage .iconYoutube:hover {
   background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
-  box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
+  box-shadow: 0 0 20px 0 rgba(255, 88, 96, 0.5);
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+  
+  .frameSec .youtubeImage .iconYoutube {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+
+  .frameSec .youtubeImage .iconYoutube:before {
+    background-size: 10px auto;
+  }
+  iframe{
+    width: 340px;
+    height: 200px;
+    margin-left: 2px;
+    
+  }
+  .card__cover img {
+    width: 100%;
+    position: relative;
+    align-items: center;
+    background-size: cover; 
+    background-position: center;
+    
+}
 }

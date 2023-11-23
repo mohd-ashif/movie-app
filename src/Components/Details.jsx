@@ -71,56 +71,52 @@ const DetailsContainer = () => {
         const genres = content.genres && content.genres.length > 0 ? content.genres.map((item) => <span key={item.id}>{item.name}</span>) : '';
         return (
             <Row>
-                <Col className='col-12'  >
-                    <h1>
-                        {titleName}
-                        {
-                            tagline && tagline !== '' ? <small> {tagline}</small> : ''
-                        }
-                    </h1>
-                </Col>
-                <Col className='col-12 col-xl-6 me-auto my-2 my-lg-0' >
-                    <div className='card card--details' >
-                        <div className='card__cover' >
+  <Col className='col-12'>
+    <h1>
+      {titleName}
+      {tagline && tagline !== '' ? <small> {tagline}</small> : ''}
+    </h1>
+  </Col>
 
-                            <img src={ImageURL} alt="myimage" />
-                        </div>
-                        <div className='card__content'>
-                            <div className="card__wrap">
-                                <span className="card__rate"> {vote_average}</span>
+  <Col className='col-12 col-xl-6 me-auto my-2 my-lg-0'>
+    <div className='card card--details'>
+      <div className='card__cover'>
+        <img src={ImageURL} alt="myimage" />
+      </div>
+      <div className='card__content'>
+        <div className="card__wrap">
+          <span className="card__rate"> {vote_average}</span>
+          <ul className="card__list">
+            <li>{original_language}</li>
+            <li>{adult}</li>
+          </ul>
+        </div>
+        <ul className="card__meta">
+          <li>
+            <span>Genre:</span>
+            <span className='linkTag'>{genres}</span>
+          </li>
+          <li>
+            <span>Type:</span>
+            <span className='linkTag'>{_media_type}</span>
+          </li>
+          <li><span>Release Date:</span> <span className='linkTag'>{first_air_date}</span></li>
+          <li><span>Country:</span> <span className='linkTag'>{origin_country}</span> </li>
+        </ul>
+        <div className="description_readmore_wrapper">
+          {overview}
+        </div>
+      </div>
+    </div>
+  </Col>
 
-                                <ul className="card__list">
-                                    <li>{original_language}</li>
-                                    <li>{adult}</li>
-                                </ul>
-                            </div>
-                            <ul className="card__meta">
-                                <li>
-                                    <span>Genre:</span>
-                                    <span className='linkTag'>{genres}</span>
-                                </li>
-                                <li>
-                                    <span>Type:</span>
-                                    <span className='linkTag'>{_media_type}</span>
-                                </li>
+  <Col className='col-12 col-xl-6'>
+    <div className='frameSec'>
+      <iframe src={`https://www.youtube.com/embed/${video}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+    </div>
+  </Col>
+</Row>
 
-                                <li><span>Release Date:</span> <span className='linkTag'>{first_air_date}</span></li>
-
-                                <li><span>Country:</span> <span className='linkTag'>{origin_country}</span> </li>
-                            </ul>
-                            <div className="description_readmore_wrapper">
-                                {overview}
-                            </div>
-                        </div>
-                    </div>
-                </Col>
-                <Col className='col-12   col-xl-6'>
-                    <div className='frameSec '>
-
-                        <iframe width="560" height="315" src={`https://www.youtube.com/embed/${video}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                    </div>
-                </Col>
-            </Row>
         )
     }
     return (

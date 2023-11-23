@@ -63,7 +63,7 @@ const  MoviesContainer = ()=>{
                     <Col className='me-auto my-2 my-lg-0' >
                         <LeftListBarComponent genres={genres} selectedGenres={selectedGenres} setSelectedGenres={setSelectedGenres}  setGenres={setGenres} type="movie" setPage={setPageno}/> 
                     </Col>
-                    <Col className='col-10  '>
+                    <Col className='col-lg-10 col-md-6 '>
                         <Row>
                                 {
                                     content && content.length > 0 ? content.map((item, index)=>{

@@ -17,6 +17,7 @@ const HeaderComponents = (data, mediaType) => {
     return (
         <div>
             <header className='header'>
+            
                 <Navbar bg="dark" expand="lg">
                     <Container>
                     <Navbar.Brand className="ml-auto" style={{ fontSize: "30px" }}>Movieflix</Navbar.Brand>

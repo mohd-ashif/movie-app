@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col';
 import CardMoviesComponents from './CardMovie';
 import axios from 'axios';
 import PaginationComponent from "../Parts/Pagination"
+import FooterComponent from './Footer';
 
 const  HomeContainer = ()=>{
   const [content, setContent] = useState([]);
@@ -64,11 +65,15 @@ useEffect(() => {
     />
   ) : null
 }
+ 
         </Row>
       </Container>
     </div>
-
+  
+<br />
+<FooterComponent />
     </ main>
+    
   )
 }
 

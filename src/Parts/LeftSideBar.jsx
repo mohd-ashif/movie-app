@@ -39,7 +39,7 @@ const LeftListBarComponent = ({
   };
 
   return (
-    <aside className="asideBar">
+    <aside className="asideBar me-auto my-2 my-lg-0">
       <h3>Filter By :-</h3>
       <ListGroup>
         {selectedGenres && selectedGenres.map((item) => (
