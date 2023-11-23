@@ -180,7 +180,7 @@ body {
   opacity: 0;
 }
 .video-thumb .video-image .circle-rate .circle-chart__circle:last-child {
-  stroke-fill: none;
+  
   fill: transparent !important;
 }
 .video-thumb .video-image .circle-rate b {
