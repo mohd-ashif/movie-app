@@ -14,7 +14,7 @@ const  SearchContainer = ()=>{
 
     const [searchValue, setSearchValue] = useState('Fight club');
     const [typeValue, setTypeValue] = useState('movie');
-    const API_KEY = "90b17c84b484021cf2a93b22b3512b4f";
+    const API_KEY = `${process.env.REACT_APP_API_KEY}`
 
     
     

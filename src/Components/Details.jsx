@@ -21,7 +21,7 @@ const DetailsContainer = () => {
 
     const id = params.movieid || '';
     const _media_type = params && params.mediatype && params.mediatype !== '' ? params.mediatype.toLowerCase() : '';
-    const API_KEY = "90b17c84b484021cf2a93b22b3512b4f"
+    const API_KEY = `${process.env.REACT_APP_API_KEY}`
 
     const fetchData = async () => {
         try {

@@ -17,7 +17,7 @@ const TvSeriesContainer = () => {
 
   const [pageno, setPageno] = useState(1)
   const [paginationno, setPaginationno] = useState(0)
-  const API_KEY = "90b17c84b484021cf2a93b22b3512b4f"
+  const API_KEY = `${process.env.REACT_APP_API_KEY}`
 
 
   const genreforURL = useGenres(selectedGenres)
