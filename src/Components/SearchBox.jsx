@@ -1,4 +1,5 @@
 import React from 'react'
+import "./SearchBox.css"
 
 const SearchBarCardComponent = ({searchValue, setSearchValue, typeValue, setTypeValue, filterData}) => {
 
@@ -19,7 +20,7 @@ const SearchBarCardComponent = ({searchValue, setSearchValue, typeValue, setType
     <>
     <div className='searchBox'>
         <div className='container'>
-        <h6>Type movie or tv show name to find it</h6>
+        {/* <h6>Type movie or tv show name to find it</h6> */}
         <div className='checkBoxSec'>
                         <label htmlFor="tvFind">
                             <input type="radio" value="tv" onChange={chagneValueHandler} checked={typeValue === 'tv' ? true : false} name="findSeriesType" id="tvFind" />
@@ -32,7 +33,7 @@ const SearchBarCardComponent = ({searchValue, setSearchValue, typeValue, setType
                         </div>
                         <form onSubmit={handleSubmit}>
                             <input type="search" value={searchValue} onChange={changeSearchHandle} placeholder='search here' />
-                            <input type="submit" value='FIND' />
+                            <input type="submit" value='Search' />
                         </form>
                   
         </div>

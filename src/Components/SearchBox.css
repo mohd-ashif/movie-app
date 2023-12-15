@@ -13,7 +13,9 @@
 .searchBox .container form, .searchBox .checkBoxSec {
     margin: 20px auto;
     border: 1px solid #fff;
-    padding: 10px;
+    border-radius: 5px;
+    width: 500px;
+    padding: 5px;
     background: #fff;
     display: block;
     color:#000000;
@@ -43,12 +45,12 @@
 .searchBox input[type="search"] {
     width: 300px;
     max-width: 100%;
-    height: 70px;
+    height: 40px;
     padding: 0 30px;
     border: 1px solid #cecece;
 }
 .searchBox input[type="submit"] {
-    height: 70px;
+    height: 35px;
     display: inline-block;
     font-family: 'Martel Sans';
     font-size: 14px;
@@ -56,7 +58,7 @@
     color: #fff;
     padding: 0 50px;
     cursor: pointer;
-    border:none;
+    border:#ff5860;
     transition: 0.4s ease;
     border-radius: 4px;
     margin-left:10px;

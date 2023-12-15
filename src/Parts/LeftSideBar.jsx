@@ -12,7 +12,7 @@ const LeftListBarComponent = ({
   type,
   setPage
 }) => {
-  const API_KEY = "90b17c84b484021cf2a93b22b3512b4f";
+  const API_KEY = `${process.env.REACT_APP_API_KEY}`
 
   const getDataList = async () => {
     const { data: { genres } } = await axios.get(`https://api.themoviedb.org/3/genre/${type}/list?api_key=${API_KEY}&language=en-US`);

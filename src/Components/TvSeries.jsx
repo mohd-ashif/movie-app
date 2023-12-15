@@ -60,10 +60,10 @@ const TvSeriesContainer = () => {
         </Row>
         <Row>
 
-          <Col className='me-auto my-2 my-lg-0' >
+        <Col className='col-lg-2 col-md-4 order-md-last my-2 my-md-0'>
             <LeftListBarComponent genres={genres} selectedGenres={selectedGenres} setSelectedGenres={setSelectedGenres} setGenres={setGenres} type="tv" setPage={setPageno} />
           </Col>
-          <Col className='col-lg-10 col-md-6 '>
+          <Col className='col-lg-10 col-md-8'>
             <Row>
               {
                 content && content.length > 0 ? content.map((item, index) => {
