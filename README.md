@@ -1,4 +1,4 @@
-MovieFlix
+#MovieFlix
 Welcome to MovieFlix, a React-based movie app where you can explore movies, series, and search for your favorite content. You can also apply filters, check out the latest releases, and enjoy seamless pagination.
 
 
