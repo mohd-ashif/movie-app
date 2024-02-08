@@ -3,7 +3,7 @@ Welcome to MovieFlix, a React-based movie app where you can explore movies, seri
 
 
 Live Demo
-Check out the live demo here.
+Check out the live demo here:https://6545eabaf165514e7e262319--dapper-bombolone-83b7ee.netlify.app/
 
 Features
 Browse Movies and Series: Explore a vast collection of movies and series.
